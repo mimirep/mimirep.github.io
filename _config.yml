@@ -23,7 +23,7 @@ navigation:
   - name: Intro
     url: /intro
   - name: Project
-    url: /archive
+    url: /project
 
 # Pagination
 paginate: 5
