@@ -21,9 +21,9 @@ avatar: #로고 이미지
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
   - name: Intro
-    url: /archive
+    url: /about
   - name: Project
-    url: /Project
+    url: /archive
 
 # Pagination
 paginate: 5
