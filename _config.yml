@@ -24,6 +24,8 @@ navigation:
     url: /intro
   - name: Project
     url: /project
+  - name: Tags
+    url: /Tags
 
 # Pagination
 paginate: 5
