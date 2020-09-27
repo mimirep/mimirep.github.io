@@ -21,7 +21,7 @@ avatar: #로고 이미지
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
   - name: Intro
-    url: /Intro
+    url: /archive
   - name: Project
     url: /Project
 
