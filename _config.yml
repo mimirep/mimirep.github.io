@@ -13,7 +13,7 @@ description: ChanHyeok Ju
 #
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: 
+avatar: #로고 이미지
 
 
 # Tabs in header. There are 'Blog', 'About', 'Archive', 'Tags'
@@ -35,9 +35,9 @@ footer-links:
   email: wnrnrxla@gmail.com
   facebook:
   flickr:
-  github: /ChanToRe
+  github: https://github.com/ChanToRe
   googleplus: # anything in your profile username that comes after plus.google.com/
-  instagram: https://www.instagram.com/ch.ju97
+  instagram: ch.ju97
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
