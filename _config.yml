@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Kiko Now
+name: Chan To Re
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: ChanHyeok Ju
 
 #
 # Flags below are optional
@@ -20,16 +20,10 @@ avatar: https://raw.githubusercontent.com/aweekj/kiko-now/master/images/jekyll-l
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
-  - name: Blog
+  - name: Intro
     url: /
-  - name: About
-    url: /about
-  - name: Archive
-    url: /archive
-  - name: Tags
-    url: /tags
-  - name: Theme
-    url: https://github.com/AWEEKJ/kiko-now
+  - name: Archaeology
+    url: /
 
 # Pagination
 paginate: 5
@@ -38,22 +32,22 @@ paginate: 5
 footer-links:
   behance: # https://www.behance.net/<username>
   dribbble:
-  email:
+  email: wnrnrxla@gmail.com
   facebook:
   flickr:
-  github: AWEEKJ/kiko-now
+  github: https://github.com/ChanToRe
   googleplus: # anything in your profile username that comes after plus.google.com/
-  instagram:
+  instagram: https://www.instagram.com/ch.ju97/
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   tumblr: # https://<username>.tumblr.com
-  twitter: jekyllrb
+  twitter: 
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
-footer-text: © 2017 Kiko Now
+footer-text: © ChanHyeok
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
