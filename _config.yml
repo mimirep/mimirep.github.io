@@ -22,8 +22,6 @@ avatar: https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/imogi.
 navigation:
   - name: Intro
     url: /intro
-  - name: Archaeology
-    url: /Archaeology
   - name: Project
     url: /project
   - name: Tags
