@@ -4,6 +4,8 @@ title: About me
 permalink: /intro/
 ---
 
+------
+
 ## Education
 
 ##### Daejin HighSchool, Seoul<br>
@@ -15,6 +17,8 @@ permalink: /intro/
 Archaeology&Art history 2016.03 ~
 
 <br>
+
+------
 
 ## Skill
 
