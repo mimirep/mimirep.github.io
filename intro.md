@@ -16,13 +16,11 @@ permalink: /intro/
 
 Archaeology&Art history 2016.03 ~
 
-<br>
-
 ------
 
 ## Skill
 
-##### Programming Language
+##### Language
 
 ![Generic badge](https://img.shields.io/badge/Language-Python-green.svg)
 
@@ -34,6 +32,6 @@ Archaeology&Art history 2016.03 ~
 
 ##### License
 
-1. 한국사능력검정시험 1급
-2. JLPT N3
-3. 굴삭기운전기능사
+- 한국사능력검정시험 1급
+- JLPT N3
+- 굴삭기운전기능사
