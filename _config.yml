@@ -22,6 +22,8 @@ avatar: https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/imogi.
 navigation:
   - name: Intro
     url: /intro
+  - name: Archaeology
+    url: /Archaeology
   - name: Project
     url: /project
   - name: Tags
@@ -49,7 +51,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
-footer-text: © ChanHyeok
+footer-text: © 2020. ChanHyeokJu. All rights reserved
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
