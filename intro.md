@@ -26,9 +26,9 @@ Archaeology&Art history 2016.03 ~
 
 ![Generic badge](https://img.shields.io/badge/Language-C-red.svg)
 
-![Generic badge](https://img.shields.io/badge/Frontend-HTML5-blue.svg)
+![Generic badge](https://img.shields.io/badge/Web-HTML5-blue.svg)
 
-![Generic badge](https://img.shields.io/badge/Frontend-CSS3-blue.svg)
+![Generic badge](https://img.shields.io/badge/Web-CSS3-blue.svg)
 
 ##### License
 
