@@ -5,5 +5,5 @@
 layout: home
 ---
 
-![main](https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/intro.jpg?raw=true){: width="40%" height="40%"}
+![main](https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/intro.jpg?raw=true){: width="40%" height="40%"}{: .center}
 
