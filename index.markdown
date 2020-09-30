@@ -5,4 +5,5 @@
 layout: home
 ---
 
-공사중
+![main](https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/intro.jpg?raw=true){: width="60%" height="60"}
+
