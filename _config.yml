@@ -105,3 +105,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+gem:
+  - jekyll-feed
