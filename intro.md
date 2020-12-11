@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Intro
-permalink: /Intro/
+title: Info
+permalink: /Info/
 ---
 
 ------
