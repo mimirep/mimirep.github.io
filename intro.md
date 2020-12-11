@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-permalink: /intro/
+title: Info
+permalink: /Info/
 ---
 
 ------
@@ -26,12 +26,13 @@ Archaeology&Art history 2016.03 ~
 
 ![Generic badge](https://img.shields.io/badge/Language-C-red.svg)
 
-![Generic badge](https://img.shields.io/badge/Web-HTML5-blue.svg)
+![Generic badge](https://img.shields.io/badge/Language-R-blue.svg)
 
-![Generic badge](https://img.shields.io/badge/Web-CSS3-blue.svg)
+
 
 ##### License
 
 - 한국사능력검정시험 1급
+
 - JLPT N3
 - 굴삭기운전기능사
