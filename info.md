@@ -6,6 +6,20 @@ permalink: /info/
 
 ------
 
+## Hi! / 안녕하세요! / 初めまして！
+
+**JU, Chanhyeok**<br>
+
+majoring in archaeology<br>
+
+Dongguk University, Gyeongju<br>
+
+Seoul, Republic of Korea<br>
+
+Email : wnrnrxla@gmail.com, wnrnrxla2@naver.com
+
+------
+
 ## Education
 
 ##### Daejin HighSchool, Seoul<br>
@@ -15,6 +29,20 @@ permalink: /info/
 ##### Dongguk University, Gyeongju<br>
 
 Archaeology&Art history 2016.03 ~
+
+------
+
+## Area of interest in archaeology
+
+Prehistoric ages<br>
+
+Social complexity in prehistoric<br>
+
+The hunter&gatherer society<br>
+
+Natural scientific analysis method<br>
+
+Programming of archaeological simulation models
 
 ------
 
