@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "고고학과 통계학(2-1)-Chi-square_test"
-tags: [계량고고학, R]
+title: "고고학 자료검정(2-1)-Chi-square_test"
+tags: [Statistics, R]
 comments: true
 ---
 
