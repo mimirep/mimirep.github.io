@@ -10,7 +10,7 @@ permalink: /info/
 
 **JU, Chanhyeok**<br>
 
-majoring in archaeology<br>
+Majoring in archaeology<br>
 
 Dongguk University, Gyeongju<br>
 
@@ -28,15 +28,13 @@ Email : wnrnrxla@gmail.com, wnrnrxla2@naver.com
 
 ##### Dongguk University, Gyeongju<br>
 
-Archaeology&Art history 2016.03 ~
+Department of Archaeology&Art history 2016.03 ~
 
 ------
 
 ## Area of interest in archaeology
 
 Prehistoric ages<br>
-
-Social complexity in prehistoric<br>
 
 The hunter&gatherer society<br>
 
@@ -52,15 +50,15 @@ Programming of archaeological simulation models
 
 ![Generic badge](https://img.shields.io/badge/Language-Python-green.svg)
 
-![Generic badge](https://img.shields.io/badge/Language-C-red.svg)
+![Generic badge](https://img.shields.io/badge/Language-R-red.svg)
 
-![Generic badge](https://img.shields.io/badge/Language-R-blue.svg)
+![Generic badge](https://img.shields.io/badge/Language-C-blue.svg)
 
 
 
 ##### License
 
-- 한국사능력검정시험 1급
+- Korean History Proficiency Test Level 1
 
-- JLPT N3
-- 굴삭기운전기능사
+- Japanese Language Proficiency Test N3
+- Craftsman Excavating Machine Operator
