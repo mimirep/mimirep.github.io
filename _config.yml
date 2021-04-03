@@ -23,7 +23,7 @@ navigation:
   - name: Info
     url: /info
   - name: Research
-    url: /Reseaech
+    url: /Research
   - name: Project
     url: /project
   - name: Tags
