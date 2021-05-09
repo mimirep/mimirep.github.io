@@ -16,7 +16,7 @@ Dongguk University, Gyeongju<br>
 
 Seoul, Republic of Korea<br>
 
-Email : wnrnrxla@gmail.com, wnrnrxla2@naver.com
+Email : <wnrnrxla@gmail.com>, <wnrnrxla2@naver.com>
 
 ------
 
