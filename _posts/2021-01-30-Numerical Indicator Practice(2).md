@@ -1,0 +1,189 @@
+---
+layout: post
+title: "Numerical Indicator Practice(2)"
+tags: [Statistics, Python]
+comments: true
+use_math: true
+---
+
+### 1. 목적
+
+​	이번 목차에서는 분포(Spread)에 대해서 다루었다. 숫자군이 조밀하게 뭉쳐있는지, 퍼져있는지에 대한 속성인 분포는 이전에 다루었던 수준(Levels)처럼 다양한 수치지표를 가지고 있다. 해당 책에서는 범위(Range), 중앙산포(Mid-spread), 표준편차(Standard deviation), 절사표준편차(Trimmed standard deviation에 대해서 설명하였으며 이러한 수치지표들을 각각의 장단점이 존재하기 때문에 상황에 알맞게 활용하는 것이 중요하다.
+
+​	범위(Range)는 최대치(Max)와 최소치(Min)의 차이로, 저항성이 약하다는 단점이 존재하여 분포에 관한 수치지표로는 잘 사용되지 않는다.
+
+​	중앙산포(Mid-spread)는 상위 25%의 숫자(상사분위수)와 하위 25%의 숫자(하사분위수)를 폐기하여 숫자군의 절반 범위를 지칭한 것을 의미한다. 중앙산포는 이상점에 대해 높은 저항성을 가지고 있으며 주로 탐색적 자료분석(Exploratory Data Analysis)에서 중앙값과 함께 사용된다.
+
+​	표준편차(Standard deviation)는 분산(Variance)의 제곱근인데, 분산은 숫자군 내의 숫자와 평균의 차이에 기반한 숫자군들의 평균으로부터의 편차를 의미하는데 음의 부호, 양의 부호를 통일해주기 위해 제곱근을 사용한 것이 표준편차이다. 수식은 아래와 같다. 표준편차의 경우 평균과 마찬가지로 이상점에 대해 저항성이 떨어진다는 단점이 존재한다.
+
+$${S} = \sqrt {S^2} = \sqrt { \frac{1}{n-1} \sum\limits_{i=1}^{n} (x_i - \bar{x})^{2}}$$
+
+​	절사표준편차(Trimmed standard deviation)는 일정한 절사율로 이상점을 절사하여 이상점으로 인한 오류를 배제하는 방법으로 절사시킨 숫자군을 윈저화된 숫자군(Winsorized batch)이라고 하며 이를 분산 계산으로 산출한 값이 절사표준편차이다. 절사표준편차의 경우 적절한 절사율을 찾는 것이 중요하다.
+
+$${S_T} = \sqrt {S_T^2} = \sqrt { \frac{(n-1)S_W^2}{n_T-1}}$$
+
+​	해당 목차의 연습문제에서는 난슝 인근 청동기시대 유적의 면적 도표를 제시해주었고, 필자는 이를 CSV형식으로 변환하여 연습에 사용하였다.
+
+<br>
+
+### 2. 코드
+
+```python
+import pandas as pd
+import numpy as np
+from scipy import stats
+from scipy.stats import iqr
+import stemgraphic
+
+data = pd.read_csv("/Users/jch/Documents/github/Study/Statistics_for_Archaeologists/Part1-3.csv")
+
+is_data_Early = data['Age'] == 'Early Bronze Age'
+data_Early = data[is_data_Early]
+
+is_data_Late = data['Age'] == 'Late Bronze Age'
+data_Late = data[is_data_Late]
+
+#연습문제1
+stemgraphic.stem_graphic(data_Early["Site(ha)"], df2 = data_Late["Site(ha)"], scale = 1)
+
+#연습문제2
+#중앙값 / 중앙산포
+Early_mid = data_Early["Site(ha)"].median()
+Early_iqr = iqr(data_Early['Site(ha)'])
+Late_mid = data_Late["Site(ha)"].median()
+Late_iqr = iqr(data_Late['Site(ha)'])
+
+#평균 / 표준편차
+Early_mean = data_Early["Site(ha)"].mean()
+Early_std = data_Early["Site(ha)"].std()
+Late_mean = data_Late["Site(ha)"].mean()
+Late_std = data_Late["Site(ha)"].std()
+
+#절사평균 / 절사표준편차
+Early_trim_mean = stats.mstats.trimmed_mean(data_Early["Site(ha)"], 0.10)
+Early_trim_std = stats.mstats.trimmed_std(data_Early["Site(ha)"], 0.10)
+Late_trim_mean = stats.mstats.trimmed_mean(data_Late["Site(ha)"], 0.10)
+Late_trim_std = stats.mstats.trimmed_std(data_Late["Site(ha)"], 0.10)
+
+print("Early Bronze Age 중앙값 : %0.3f" % Early_mid)
+print("Early Bronze Age 중앙산포 : %0.3f" % Early_iqr)
+print("Late Bronze Age 중앙값 : %0.3f" % Late_mid)
+print("Late Bronze Age 중앙산포 : %0.3f\n" % Late_iqr)
+
+print("Early Bronze Age 평균 : %0.3f" % Early_mean)
+print("Early Bronze Age 표준편차 : %0.3f" % Early_std)
+print("Late Bronze Age 평균 : %0.3f" % Late_mean)
+print("Late Bronze Age 표준편차 : %0.3f\n" % Late_std)
+
+print("Early Bronze Age 절사평균(0.10) : %0.3f" % Early_trim_mean)
+print("Early Bronze Age 절사표준편차(0.10) : %0.3f" % Early_trim_std)
+print("Late Bronze Age 절사평균(0.10) : %0.3f" % Late_trim_mean)
+print("Late Bronze Age 절사표준편차(0.10) : %0.3f" % Late_trim_std)
+```
+
+​	 Jupyter Notebook 환경에서 연습을 진행했으며 Pandas, Numpy, Scipy, Stemgraphic 라이브러리를 사용하였다. 가장 먼저 사용할 라이브러리들을 import 해주었고 pd.read_csv를 사용하여 미리 만들어놓은 csv파일을 불러왔다. 이후 연습문제에서 요구한 것 처럼 전기 청동기(Early Bronze Age), 후기 청동기(Late Bronze Age)로 구분하는 전처리 과정을 실행하였다.  
+
+<br>
+
+### 3. 연습문제 풀이
+
+```python
+import pandas as pd
+import numpy as np
+from scipy import stats
+from scipy.stats import iqr
+import stemgraphic
+```
+
+​	먼저 Pandas, Numpy, Scipy를 import 했다. 중앙산포를 사용하기위해 Scipy의 iqr을 import 해주었고 줄기-잎 도표를 사용하기 위해 Stemgraphic도 import 해주었다.
+
+<br>
+
+```python
+data = pd.read_csv("/Users/jch/Documents/github/Study/Statistics_for_Archaeologists/Part1-3.csv")
+
+is_data_Early = data['Age'] == 'Early Bronze Age'
+data_Early = data[is_data_Early]
+
+is_data_Late = data['Age'] == 'Late Bronze Age'
+data_Late = data[is_data_Late]
+```
+
+​	난슝 Data를 CSV로 만든 다음 불러왔다. 이후 Age에 따라서 전기 청동기 시대(Early Bronze Age)와 후기 청동기 시대(Late Bronze Age)로 나누는 전처리 과정을 해주었다.
+
+<br>
+
+```python
+#연습문제1
+stemgraphic.stem_graphic(data_Early["Site(ha)"], df2 = data_Late["Site(ha)"], scale = 1)
+```
+
+​	연습문제1은 전기 청동기 유적 면적과 후기 청동기 유적 면적을 Back to back stem leaf plot으로 살펴보는 문제이다. 이전 Part 1-2의 복습문제인데, 해당 도표를 보았을 때 후기 청동기 유적 면적이 상대적으로 전기 청동기 유적 면적보다 값이 큰 것을 알 수 있었다. 
+
+<br>
+
+```python
+#연습문제2
+#중앙값 / 중앙산포
+Early_mid = data_Early["Site(ha)"].median()
+Early_iqr = iqr(data_Early['Site(ha)'])
+Late_mid = data_Late["Site(ha)"].median()
+Late_iqr = iqr(data_Late['Site(ha)'])
+
+#평균 / 표준편차
+Early_mean = data_Early["Site(ha)"].mean()
+Early_std = data_Early["Site(ha)"].std()
+Late_mean = data_Late["Site(ha)"].mean()
+Late_std = data_Late["Site(ha)"].std()
+
+#절사평균 / 절사표준편차
+Early_trim_mean = stats.mstats.trimmed_mean(data_Early["Site(ha)"], 0.10)
+Early_trim_std = stats.mstats.trimmed_std(data_Early["Site(ha)"], 0.10)
+Late_trim_mean = stats.mstats.trimmed_mean(data_Late["Site(ha)"], 0.10)
+Late_trim_std = stats.mstats.trimmed_std(data_Late["Site(ha)"], 0.10)
+
+
+#출력
+print("Early Bronze Age 중앙값 : %0.3f" % Early_mid)
+print("Early Bronze Age 중앙산포 : %0.3f" % Early_iqr)
+print("Late Bronze Age 중앙값 : %0.3f" % Late_mid)
+print("Late Bronze Age 중앙산포 : %0.3f\n" % Late_iqr)
+
+print("Early Bronze Age 평균 : %0.3f" % Early_mean)
+print("Early Bronze Age 표준편차 : %0.3f" % Early_std)
+print("Late Bronze Age 평균 : %0.3f" % Late_mean)
+print("Late Bronze Age 표준편차 : %0.3f\n" % Late_std)
+
+print("Early Bronze Age 절사평균(0.10) : %0.3f" % Early_trim_mean)
+print("Early Bronze Age 절사표준편차(0.10) : %0.3f" % Early_trim_std)
+print("Late Bronze Age 절사평균(0.10) : %0.3f" % Late_trim_mean)
+print("Late Bronze Age 절사표준편차(0.10) : %0.3f" % Late_trim_std)
+```
+
+​	연습문제2에서는 중앙값, 평균, 절사평균을 사용하고 이에 대응되는 산포 수치지표를 활용하여 분석할 것을 요구했다.
+
+​	먼저 전기 청동기와 후기 청동기 각각 median을 활용하여 중앙값을 구해주었고 iqr을 사용하여 중앙산포를 구해주었다. iqr은 옵션이 굉장히 많았는데 천천히 살펴보는 것이 좋을 것 같다. 중앙값과 중앙산포를 보았을때 Stem leaf plot에서 본 것처럼 후기 청동기 시대의 유적 면적이 더 큰 것을 알 수 있다.
+
+​	이후 mean과 std를 활용하여 평균과 표준편차를 산출했다. 전기 청동기 유적의 면적 평균은 다른 수치지표와 비교하였을때 많은 차이가 없었으나 후기 청동기 유적의 경우 이상점의 영향으로 다른 저항성이 높은 수치지표들과 값의 차이가 큰 것을 알 수 있었다. 
+
+​	절사평균과 절사표준편차를 사용하기 위해 stats.mstats.trimmed_mean과 stats.mstats.trimmed_std를 사용했다. 전에 사용했던 방법보다 이 방법이 더 간단하게 사용할 수 있어서 앞으로 이 방법을 사용하도록 하겠다. 연습문제2에서는 절사율을 10%로 통일하기를 원했기 때문에 절사율을 10%으로 통일해주었다. 절사평균은 다른 수치지표들과 크게 차이가 없었으나 절사표준편차의 경우 다른 산포 수치지표들에 비해 더 작은 값이 산출되었다. 10%라는 값이 적당한 절사율이 아닌 것 같다.
+
+```
+Early Bronze Age 중앙값 : 1.900
+Early Bronze Age 중앙산포 : 1.125
+Late Bronze Age 중앙값 : 5.400
+Late Bronze Age 중앙산포 : 3.100
+
+Early Bronze Age 평균 : 1.863
+Early Bronze Age 표준편차 : 0.820
+Late Bronze Age 평균 : 6.219
+Late Bronze Age 표준편차 : 2.790
+
+Early Bronze Age 절사평균(0.10) : 1.820
+Early Bronze Age 절사표준편차(0.10) : 0.533
+Late Bronze Age 절사평균(0.10) : 5.965
+Late Bronze Age 절사표준편차(0.10) : 2.055
+```
+
+<br>
+
