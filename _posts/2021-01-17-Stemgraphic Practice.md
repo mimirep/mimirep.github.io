@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "고고학 통계 활용 연습(1)"
+title: "Stemgraphic Practice"
 tags: [Statistics, Python]
 comments: true
 ---
