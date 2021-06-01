@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "고고학 자료검정(2-2)-Chi-square_test"
+title: "Chi-square_test Practice(2)"
 tags: [Statistics, Python]
 comments: true
 ---
