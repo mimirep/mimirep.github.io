@@ -24,11 +24,15 @@ Email : <wnrnrxla@gmail.com>, <wnrnrxla2@naver.com>
 
 ##### Daejin HighSchool, Seoul<br>
 
-2013.3 ~ 2016.02<br>
+Liberal Arts / 2013.3 ~ 2016.02<br>
 
 ##### Dongguk University, Gyeongju<br>
 
-Department of Archaeology&Art history 2016.03 ~
+Department of Archaeology & Art history / 2016.03 ~<br>
+
+##### Seoul National University, Seoul (*Exchange student)<br>
+
+Department of Archaeology & Art history / 2020.09 ~ 2021.06
 
 ------
 
@@ -59,6 +63,5 @@ Programming of archaeological simulation models
 ##### License
 
 - Korean History Proficiency Test Level 1
-
 - Japanese Language Proficiency Test N3
 - Craftsman Excavating Machine Operator
