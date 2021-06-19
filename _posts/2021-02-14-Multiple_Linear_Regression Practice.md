@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Multiple_Linear_Regression Practice"
+title: "Multiple Linear Regression Practice"
 tags: [Statistics, Python]
 comments: true
 use_math: true
