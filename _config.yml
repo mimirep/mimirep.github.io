@@ -24,8 +24,8 @@ navigation:
     url: /info
   - name: Research
     url: /Research
-  - name: Project
-    url: /project
+  - name: P&P
+    url: /P&P
   - name: Tags
     url: /tags
 
