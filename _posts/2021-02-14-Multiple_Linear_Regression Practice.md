@@ -221,8 +221,6 @@ Score : 0.954672
 
 ### 4. 결과
 
-<img src="https://github.com/ChanToRe/Project/blob/master/Songgukri_Multiple_Linear_Regression/table.png?raw=true" width="60%" height="60%"/>
-
 ​	다중선형회귀 모델의 예측 결과가 이전의 단순선형회귀모델에 비해 정확도가 더 뛰어났다. 하지만 견부각을 포함한 다중선형회귀 모델과 제외한 다중선형회귀 모델의 경우 어느 쪽의 정확도가 더 뛰어난지 파악하기 어렵다. 앞으로는 사용할 수 있는 변수를 찾고, 데이터를 더 찾아내어 모델의 정확도를 증가시키는 작업이 필요할 것 같다.
 
 <br>

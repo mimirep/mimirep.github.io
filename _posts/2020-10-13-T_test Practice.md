@@ -15,7 +15,7 @@ comments: true
 
 ​	공식에 따라 동일 모집단에서 추출한 표본의 평균차이의 분포인 t값을 계산해냈다면 아래의 Table을 참고하여 유의수준에 따라 비교해보면 된다. 해당 유의수준의 값보다 크다면 귀무가설을 기각할 수 있고 그렇지 않다면 기각할 수 없다.
 
-<img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/t-distribution_table.jpg?raw=true" width="60%" height="60%"/>
+<img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/2020-10-13/t-distribution_table.jpg?raw=true" width="60%" height="60%"/>
 
 ### 2. 코드
 

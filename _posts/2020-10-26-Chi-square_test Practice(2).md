@@ -9,7 +9,7 @@ comments: true
 
 ​	지난 번에 사용했던 예제를 이번에는 R이 아닌 Python을 활용하여 풀어보고자 하였다. 애초에 주로 사용하던 언어가 Python이기도 하고, Python도 통계에서 자주 사용되는 만큼 익혀두면 좋을 것 같다. pandas, numpy, scipy, matplotlib와 같은 라이브러리들이 거의 필수적으로 사용되는데, numpy는 어느정도 써본 경험이 있지만 scipy, matplotlib는 연습이 필요해서 이번 기회를 통해 연습해보고자 하였다. Chi-square 검정과 본 글에서 사용된 예제에 대해서는 이전 글을 참고하길 바란다
 
-<img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/chi-squared-test.png?raw=true" width="60%" height="60%"/>
+<img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/2020-10-20/chi-squared-test.png?raw=true" width="60%" height="60%"/>
 
 <br>
 

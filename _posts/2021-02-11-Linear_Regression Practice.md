@@ -8,7 +8,7 @@ use_math: true
 
 ### 1. 목적
 
-<img src="https://github.com/ChanToRe/Study/blob/master/Statistics_for_Archaeologists/Practice_Linear_Regression/table.png?raw=true" width="60%" height="60%"/>
+<img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/2021-02-11/table.png?raw=true" width="60%" height="60%"/>
 
 ​	선형회귀분석은 오랫동안 널리 사용된 분석방법으로, 독립변수와 종속변수 간의 관계를 파악하기위해 사용한다. 쉽게 말하자면 어떠한 자료의 값에 대해 영향을 끼치는 조건을 고려하여 평균을 구한 것이다. 이러한 회귀분석은 2개의 변수를 가지고 분석을 수행하는 단순선형회귀분석과 2개 이상의 변수를 가지고 분석을 수행하는 다중선형회귀분석이 있는데 본 글에서는 임의적인 상황을 염두하고 데이터를 만든 후 단순선형회귀분석을 시행하고자 한다. 다중선형회귀분석의 경우 추후에 다루도록 하겠다.
 

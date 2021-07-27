@@ -15,7 +15,7 @@ comments: true
 
 ​	Chi-square를 사용할 때에는 주의할 점이 따른다. 첫 번째, 관찰치의 값이 5 이하인 원소가 20% 이상일 경우 활용을 지양한다. 두 번째 관찰치에 0이 들어갈 경우 활용을 지양한다. 세 번째 Sample의 수가 늘어나면 귀무가설이 기각되기 쉬워지므로 이에 유의해야한다. 세 번째에 경우 통계학적으로는 유의미할지몰라도 실제로 의미를 갖는 것은 아니기 때문에 더욱더 유의해야한다.
 
-<img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/Chi_square-test_table.jpeg?raw=true" width="100%" height="100%"/>
+<img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/2020-10-20/Chi_square-test_table.jpeg?raw=true" width="100%" height="100%"/>
 
 ### 2. 코드
 

@@ -119,7 +119,7 @@ dev.off()
 
 ​	앞서 살펴본 Median Polish 결과를 표로 저장해주었다. '/Users/jch/Desktop/plot.png' 부분이 저장되는 주소다. 마지막으로 dev.off()를 통해 분석을 종료해주었다.
 
-<img src="https://github.com/ChanToRe/Project/blob/master/archaeology&statistics/Median%20Polish/plot.png?raw=true" width="60%" height="60%"/>
+<img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/2021-06-24/plot.png?raw=true" width="60%" height="60%"/>
 
 ​	표는 Residuals가 축약되어있다. 살펴보면 (0, 0)에 보이는 점들은 Residuals에서 0의 값을 가진 것들이고 다른 값들은 각각 도표 위에 정상적으로 배치되어있다.
 
