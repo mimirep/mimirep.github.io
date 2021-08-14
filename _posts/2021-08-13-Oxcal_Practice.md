@@ -5,7 +5,8 @@ tags: [Radiocarbondating]
 comments: true
 use_math: true
 ---
-<br>
+
+<a href="https://c14.arch.ox.ac.uk/oxcal.html" style="Font-size:20pt">Oxcal 바로가기</a>
 
 ### 1. Oxcal이란?
 
@@ -49,54 +50,49 @@ Oxcal Oline -> File -> New -> Tools -> Import -> 기능(R-combine) -> 데이터 
 
 #### 2) Code
 
-```js
-Plot()
- {
-  R_Combine("도당유적")
-  {
-   R_Date("도당유적 1-1호 주거지", 2420, 50);
-   R_Date("도당유적 3-7호 주거지", 2620, 60);
-   R_Date("도당유적 3-5호 주거지", 2440, 50);
-   R_Date("도당유적 3-8호 주거지", 2480, 50);
-   R_Date("도당유적 3-11호 주거지", 2460, 50);
-   R_Date("도당유적 2-10호 주거지", 2440, 40);
-  };
- };
+```
+Plot(){
+	R_Combine("도당유적"){
+		R_Date("도당유적 1-1호 주거지", 2420, 50);
+		R_Date("도당유적 3-7호 주거지", 2620, 60);
+		R_Date("도당유적 3-5호 주거지", 2440, 50);
+		R_Date("도당유적 3-8호 주거지", 2480, 50);
+		R_Date("도당유적 3-11호 주거지", 2460, 50);
+		R_Date("도당유적 2-10호 주거지", 2440, 40);
+	};
+};
 
 ```
 
 ​	Oxcal은 앞서 살펴본 GUI외에도 간단하게 코드를 작성하여 사용할 수도 있다. 실제로 Oxcal에서 사용하는 문법은 굉장히 간단하기 때문에 필자는 Data가 많을 경우 GUI를 활용하고, 적을 경우는 코드를 작성한다. Oxcal을 수많은 기능이 있지만 대부분 방사성탄소연대측정치에 수륜연대보정을 시행하기 위해 사용한다. 때문에 대부분 도표를 그리기 위해 사용한다. 이 경우 굉장히 간단하게 사용할 수 있다.
 
-```
-Plot()
-	{
+```js
+Plot(){
 	
-	}
+}
 ```
 
 ​	먼저 Plot()는 도표를 작성한다는 것이다. 새로운 Oxcal 창을 열었을 경우 자동적으로 Plot(){ }이 작성되어 있다. 이후의 코드는 Plot(){ }의 안에 작성하면된다.
 
 ```js
-Plot()
-	{
-		R_Combine("Tittle"){
+Plot(){
+	R_Combine("Tittle"){
 		
-		}
 	}
+}
 ```
 
 ​	그 다음에는 사용할 기능을 넣는다. 앞서 말했다시피, 본 글에서는 여러 연대측정치를 결합하는 R-Combine을 사용할 것이다. Tittle은 괄호 안에 R_Combine("Tittle") 형식으로 넣어준다. 이외에도 다른 기능을 사용하고 싶다면, R_Combine 자리에 해당 기능을 적어주면 된다.
 
 ```js
-Plot()
-	{
-		R_Combine("Tittle"){
-			R_Date("Name_1", BP, Error);
-			R_Date("Name_2", BP, Error);
-			...
-			R_Date("Name_n", BP, Error);
-		}
+Plot(){
+	R_Combine("Tittle"){
+		R_Date("Name_1", BP, Error);
+		R_Date("Name_2", BP, Error);
+		...
+		R_Date("Name_n", BP, Error);
 	}
+}
 ```
 
  	마지막으로 데이터를 넣어준다. 본 글에서는 R-Date를 사용했다. R-Date는 방사성탄소의 농도함수를 사용하여 보정연대에 분포할 확률을 계산하는 것이다. 데이터의 형식("샘플명", 연대측정치, 표준편차") 형식으로 넣어주면 된다.
