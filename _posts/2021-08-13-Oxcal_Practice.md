@@ -5,7 +5,8 @@ tags: [Radiocarbondating]
 comments: true
 use_math: true
 ---
-<br>
+
+<a href="https://c14.arch.ox.ac.uk/oxcal.html" style="Font-size:20pt">Oxcal 바로가기</a>
 
 ### 1. Oxcal이란?
 
