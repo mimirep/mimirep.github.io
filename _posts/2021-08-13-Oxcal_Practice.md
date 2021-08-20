@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Oxcal Practice"
-tags: [Radiocarbondating]
+tags: [Radiocarbondating, python, Statistics]
 comments: true
 use_math: true
 ---
@@ -26,7 +26,32 @@ use_math: true
 
 ### 3. Data 수집 및 전처리
 
-​	Oxcal을 사용하기 위해서는 가장 먼저 방사성탄소연대측정치가 필요하다. 본 글에서는 <a href="http://rcdb.kr">RCDB</a>를 사용하여 경기도 고양시 도당유적의 방사성탄소연대측정치 6개를 추출했다. 추출한 측정치는 R-Date를 이용하여 보정한 뒤 사용할 것이다. R-Date는 단일 방사성탄소연대측정치를 수륜연대보정곡선을 통해 보정한 값을 출력하는 기능이다.
+​	Oxcal을 사용하기 위해서는 가장 먼저 방사성탄소연대측정치가 필요하다. 본 글에서는 <a href="http://rcdb.kr">RCDB</a>를 사용하여 경기도 연천군 남계리 유적의 방사성탄소연대측정치를 추출했다. 남계리 유적의 3호 주거지에서는 여러 탄화목이 출토되었는데, 3개의 범주로 구분된다(연천1, 연천2, 연천3). 본 글에서는 이 중 연천1에 해당하는 자료들을 사용할 것이다. 
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#Data load
+data = pd.read_csv('./rcdb.csv')
+
+#Boxplot
+plt.boxplot(data['Age_BP'])
+plt.title('Namgyeri AMS')
+plt.xticks([1], ['yeoncheon1'])
+plt.ylabel('Age(BP)')
+
+#save
+plt.savefig('./YC-NG-boxplot.png')
+```
+
+​	가장 먼저 이상치를 파악하고 제거 여부를 결정하기 위해 Boxplot을 그려주었다. 데이터를 가져오기 위해 pandas를 사용했고, Boxplot을 그려주기 위해 matplotlib를 사용했다. 데이터를 불러온 뒤, Boxplot을 그려주었다. 이후 타이틀과 박스의 명칭을 붙여준 뒤, y축이 Age(BP)를 나타낸다는 것을 명시하기 위해 label을 붙였다.
+
+<center><img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/2021-08-13/YC-NG-boxplot.png?raw=true"></center>
+
+​	결과는 위의 표와 같다. 표를 보면 이상치가 3개 검출된 것을 알 수 있는데, 남계리 유적을 발굴조사한 서울대학교 박물관에서는 이중 SNU14-R016, Beta-373370 자료의 측정치만을 이상치로 분류하고 이후 진행하는 결합에서 제거하였다. 아마도 Beta-373371의 측정치는 상대적으로 이탈된 수준이 낮기 때문에 이상치로 보지 않은 것 같다.
+
+​	이렇게 이상치를 제거하고 선정한 측정치들은  방사성탄소연대측정치를 수륜연대보정곡선으로 보정하는 기능인 R-Date를 이용하여 보정한 뒤 사용할 것이다.
 
 <br>
 
@@ -34,7 +59,9 @@ use_math: true
 
 ​	R-Combine은 Oxcal에서 가장 많이 사용되는 기능이다. 방사성탄소연대측정법은 샘플의 오염, 측정오류, 고목효과 등으로 인해 불확실성이 존재한다. 이러한 방사성탄소연대측정법의 불확실성을 제거하기 위해 여러 방법이 사용되는데, 가장 확실하고 보편적으로 사용되는 방법이 바로 복수측정이다. R-Combine은 2개 이상의 탄소연대측정치를 결합하여 연대와 표준편차의 평균을 산출하는 방법이다.
 
-​	Oxcal은 GUI를 사용하는 방법과 Coding을 하는 방법이 있는데, 이어서 두 방법으로 R-Combine을 사용해보도록 하겠다.
+​	남계리 유적에서 출토된 탄화목들은 모두 서울대학교 기초과학공동기기원, Beta Analytic, The Prairie Research Institute at the University of Illinois, PaleoLabo, 14Chrono Centre at Queen's University Belfast에서 복수측정되었다. 이 측정치들을 가지고 Oxcal을 사용하여 R-Combine을 시행하고자 한다. 발굴조사를 시행한 서울대학교 박물관측의 결과자료가 있기에 해당 결과를 표적으로 시행할 것이다.
+
+​	Oxcal은 GUI를 사용하는 방법과 Coding을 하는 방법이 있는데, 두 방법 모두 활용하여 R-Combine을 사용해보도록 하겠다.
 
 #### 1) GUI
 
@@ -103,11 +130,11 @@ Plot(){
 
 ### 5. 결과 및 해석
 
-<center><img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/2021-08-13/dodang.png?raw=true"></center>
+<center><img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/2021-08-13/Untitled.png?raw=true"></center>
 
-​	앞선 방법을 통해 만들어진 것이 바로 위의 도표이다. 살펴보면, 6개의 측정치를 R-Combine하여 도출한 결과가 2467(BP), 20(Error)이다.
+​	앞선 방법을 통해 만들어진 것이 바로 위의 도표이다. 살펴보면, 6개의 측정치를 R-Combine하여 도출한 결과가 1866(BP), 6(Error)이다.
 
-​	파란색 그래프는 수륜연대보정곡선이며 하단의 회색이 해당 연대에 분포할 가능성을 나타낸다. 이 경우 758-678calBC에 위치할 확률이 37.1%, 672-476calBC에 위치할 확률이 57.9%, 431-426calBC에 위치할 확률이 0.5%이다. 운이 나쁘게도 수륜연대보정곡선의 평탄면에 해당되는 연대의 샘플들이어서 확연하게 높은 확률을 얻을 수는 없었지만, 발굴조사보고서를 통해 고고학적 맥락을 확인한다면, 대략적인 연대의 위치는 추정할 수 있을 것이다.
+​	파란색 그래프는 수륜연대보정곡선이며 하단의 회색이 해당 연대에 분포할 가능성을 나타낸다. 결합된 결과는 서울대학교 박물관에서 시행한 결과와 동일한 것을 알 수 있다. 이 경우 128-217calAD에 위치할 확률이 95.4%로 남계리 유적 3호 주거지가 대략 2세기 경의 것임을 알 수 있다. 본 글에서는 다루지 않았지만 연천2, 연천3 범주도 비슷한 결과값을 보여서 남계리 유적 3호 주거지의 연대가 약 2세기 경이라는 것에 신빙성을 더해준다.
 
 <br>
 
@@ -115,4 +142,4 @@ Plot(){
 
 ​	지금까지 Oxcal의 사용법을 아주 일부 살펴보았다. 본 글에서는 R-Combine과 R-Date를을 사용했지만, 이외에도 수많은 기능과 형식들이 존재한다. 여러 논문을 살펴보았을 때 가장 많이 사용된 기능은 R-Combine 이었다. 그 다음으로 많이 사용된 것은 여러 R-Date로 보정된 연대들을 Multi plot으로 표현한 것이었다. 본글에서는 다루지 않았지만, 연대의 단위도 바꿀 수 있으며, 세부적인 세팅을 사용자의 입맛대로 바꿀 수 있다. 더 관심이 있다면, <a href="https://c14.arch.ox.ac.uk/oxcalhelp/hlp_contents.html">Oxcal Manual</a>을 읽어볼 것을 추천한다.
 
-​	Oxcal을 사용하는 것보다 더 중요한 것은 방사성탄소연대측정법과 수륜연대보정에 대한 이해이다. 도표만 그릴줄 알고 그려낸 도표를 해석할 수 있는 능력이 없다면, 이 좋은 프로그램을 사용하는 의미가 없을 것이다. 가령 도당유적의 경우도 보정곡선이 평탄면에 위치하기 때문에 좋은 사례라고 보기는 어렵다.
+​	Oxcal을 사용하는 것보다 더 중요한 것은 방사성탄소연대측정법과 수륜연대보정에 대한 이해이다. 도표만 그릴줄 알고 그려낸 도표를 해석할 수 있는 능력이 없다면, 이 좋은 프로그램을 사용하는 의미가 없을 것이다.
