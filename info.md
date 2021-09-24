@@ -58,6 +58,7 @@ Programming of archaeological simulation models
 
 ##### License
 
-- Korean History Proficiency Test Level 1
-- Japanese Language Proficiency Test N3
+- Korean History Proficiency Test Level 1 
+- Japanese Language Proficiency Test N3 (JLPT N3)
 - Craftsman Excavating Machine Operator
+- Advanced Data Analytics Semi-Professional (ADsP)
