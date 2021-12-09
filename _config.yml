@@ -24,8 +24,6 @@ navigation:
     url: /info
   - name: Posts
     url: /Posts
-  - name: Practice
-    url: /practice
   - name: Tags
     url: /tags
 
