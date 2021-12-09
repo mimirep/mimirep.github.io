@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Review
-permalink: /Reviews/
+permalink: /Review/
 ---
 
 {% if site.reviews.size == 0 %}
   <h2>No post found</h2>
 {% endif %}
 
-<ul class="Reviews">
+<ul class="Review">
   {% for post in site.reviews %}
     {% unless post.next %}
       <h2>{{ post.date | date: '%Y' }}</h2>
