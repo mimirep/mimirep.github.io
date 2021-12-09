@@ -2,6 +2,7 @@
 layout: post
 title: "Median Polish Practice"
 tags: [Statistics, R]
+categories : [Practice]
 comments: true
 use_math: true
 ---

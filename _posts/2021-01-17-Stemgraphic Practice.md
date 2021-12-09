@@ -2,6 +2,7 @@
 layout: post
 title: "Stemgraphic Practice"
 tags: [Statistics, Python]
+categories : [Practice]
 comments: true
 ---
 

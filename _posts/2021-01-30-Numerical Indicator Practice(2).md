@@ -2,6 +2,7 @@
 layout: post
 title: "Numerical Indicator Practice(2)"
 tags: [Statistics, Python]
+categories : [Practice]
 comments: true
 use_math: true
 ---

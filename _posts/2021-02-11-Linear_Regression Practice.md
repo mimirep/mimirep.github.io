@@ -2,6 +2,7 @@
 layout: post
 title: "Linear Regression Practice"
 tags: [Statistics, Python]
+categories : [Practice]
 comments: true
 use_math: true
 ---

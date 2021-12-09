@@ -2,6 +2,7 @@
 layout: post
 title: "T_test Practice"
 tags: [Statistics, R]
+categories : [Practice]
 comments: true
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: "Chi-square_test Practice(2)"
 tags: [Statistics, Python]
+categories : [Practice]
 comments: true
 ---
 

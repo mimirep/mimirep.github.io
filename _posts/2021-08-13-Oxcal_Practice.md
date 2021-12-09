@@ -2,6 +2,7 @@
 layout: post
 title: "Oxcal Practice"
 tags: [Radiocarbondating, python, Statistics]
+categories : [Practice]
 comments: true
 use_math: true
 ---
