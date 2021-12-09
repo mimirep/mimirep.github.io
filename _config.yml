@@ -22,8 +22,6 @@ avatar: https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/imogi.
 navigation:
   - name: Info
     url: /info
-  - name: Review
-    url: /Review
   - name: P&P
     url: /P&P
   - name: Tags
