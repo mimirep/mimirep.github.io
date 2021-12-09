@@ -38,12 +38,12 @@ layout: default
   {% endfor %}
 </div>
 
-{% if site.reviews.size == 0%}
+{% if site.review.size == 0%}
   <h2>No post found</h2>
 {% endif %}
 
 <div class="reviews">
-  {% for post in paginator.reviews %}
+  {% for post in paginator.review %}
     <article class="post">
       <h1>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
