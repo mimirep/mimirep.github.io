@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Stemgraphic Practice"
-tags: [Statistics, Python]
-categories : [Practice]
+tags: [Practice]
 comments: true
 ---
 

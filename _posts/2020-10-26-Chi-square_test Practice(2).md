@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Chi-square_test Practice(2)"
-tags: [Statistics, Python]
-categories : [Practice]
+tags : [Practice]
 comments: true
 ---
 

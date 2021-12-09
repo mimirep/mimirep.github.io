@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Chi-square_test Practice(1)"
-tags: [Statistics, R]
-categories : [Practice]
+tags : [Practice]
 comments: true
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Numerical Indicator Practice(1)"
-tags: [Statistics, Python]
-categories : [Practice]
+tags: [Practice]
 comments: true
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Linear Regression Practice"
-tags: [Statistics, Python]
-categories : [Practice]
+tags: [Practice]
 comments: true
 use_math: true
 ---

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Oxcal Practice"
-tags: [Radiocarbondating, python, Statistics]
-categories : [Practice]
+tags: [Practice]
 comments: true
 use_math: true
 ---
