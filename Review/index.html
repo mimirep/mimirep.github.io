@@ -9,26 +9,26 @@ permalink: /Review/
 {% endif %}
 
 <ul class="Review">
-  {% for post in site.reviews %}
-    {% unless post.next %}
-      <h2>{{ post.date | date: '%Y' }}</h2>
+  {% for review in site.reviews %}
+    {% unless review.next %}
+      <h2>{{ review.date | date: '%Y' }}</h2>
     {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% capture year %}{{ review.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ review.next.date | date: '%Y' }}{% endcapture %}
       {% if year != nyear %}
-        <h2>{{ post.date | date: '%Y' }}</h2>
+        <h2>{{ review.date | date: '%Y' }}</h2>
       {% endif %}
     {% endunless %}
 
     <li>
-      {% if post.link %}
-      <a href="{{ post.link }}">
+      {% if review.link %}
+      <a href="{{ review.link }}">
       {% else %}
-      <a href="{{ site.baseurl }}{{ post.url }}">
+      <a href="{{ site.baseurl }}{{ review.url }}">
       {% endif %}
-        {{ post.title }}
+        {{ review.title }}
       </a>
-      <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+      <time>{{ review.date | date: "%Y-%m-%d" }}</time>
     </li>
   {% endfor %}
 </ul>
