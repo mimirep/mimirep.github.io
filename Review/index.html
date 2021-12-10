@@ -1,0 +1,34 @@
+---
+layout: page
+title: Reviews
+permalink: /Reviews/
+---
+
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% endif %}
+
+<ul class="Reviews">
+  {% for review in site.posts %}
+    {% unless review.next %}
+      <h2>{{ review.date | date: '%Y' }}</h2>
+    {% else %}
+      {% capture year %}{{ review.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ review.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <h2>{{ review.date | date: '%Y' }}</h2>
+      {% endif %}
+    {% endunless %}
+
+    <li>
+      {% if review.link %}
+      <a href="{{ review.link }}">
+      {% else %}
+      <a href="{{ site.baseurl }}{{ review.url }}">
+      {% endif %}
+        {{ review.title }}
+      </a>
+      <time>{{ review.date | date: "%Y-%m-%d" }}</time>
+    </li>
+  {% endfor %}
+</ul>
