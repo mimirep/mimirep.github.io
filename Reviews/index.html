@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Reviews
-permalink: /Reviews/
+title: Posts
+permalink: /Posts/
 ---
 
 {% if site.reviews.size == 0 %}
-  <h2>No review found</h2>
+  <h2>No post found</h2>
 {% endif %}
 
 <ul class="Reviews">
-  {% for review in site.reviews %}
+  {% for post in site.reviews %}
     {% unless review.next %}
       <h2>{{ review.date | date: '%Y' }}</h2>
     {% else %}
