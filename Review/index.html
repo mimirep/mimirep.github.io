@@ -9,7 +9,7 @@ permalink: /Reviews/
 {% endif %}
 
 <ul class="Reviews">
-  {% for review in site.posts %}
+  {% for review in site.reviews %}
     {% unless review.next %}
       <h2>{{ review.date | date: '%Y' }}</h2>
     {% else %}

@@ -37,7 +37,7 @@ layout: default
     </article>
   {% endfor %}
 
-  {% for review in paginator.posts %}
+  {% for review in paginator.reviews %}
     <article class="review">
       <h1>
         <a href="{{ site.baseurl }}{{ review.url }}">{{ review.title }}</a>
