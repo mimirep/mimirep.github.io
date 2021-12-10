@@ -9,7 +9,7 @@ permalink: /Posts/
 {% endif %}
 
 <ul class="Posts">
-  {% if post in site.posts %}
+  {% if layout == post %}
     {% for post in site.posts %}
       {% unless post.next %}
         <h2>{{ post.date | date: '%Y' }}</h2>
