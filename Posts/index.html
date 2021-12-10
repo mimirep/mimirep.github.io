@@ -9,26 +9,28 @@ permalink: /Posts/
 {% endif %}
 
 <ul class="Posts">
-  {% for post in site.posts %}
-    {% unless post.next %}
-      <h2>{{ post.date | date: '%Y' }}</h2>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
+  {% if post in site.posts %}
+    {% for post in site.posts %}
+      {% unless post.next %}
         <h2>{{ post.date | date: '%Y' }}</h2>
-      {% endif %}
-    {% endunless %}
-
-    <li>
-      {% if post.link %}
-      <a href="{{ post.link }}">
       {% else %}
-      <a href="{{ site.baseurl }}{{ post.url }}">
-      {% endif %}
-        {{ post.title }}
-      </a>
-      <time>{{ post.date | date: "%Y-%m-%d" }}</time>
-    </li>
-  {% endfor %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          <h2>{{ post.date | date: '%Y' }}</h2>
+        {% endif %}
+      {% endunless %}
+
+      <li>
+        {% if post.link %}
+        <a href="{{ post.link }}">
+        {% else %}
+        <a href="{{ site.baseurl }}{{ post.url }}">
+        {% endif %}
+          {{ post.title }}
+        </a>
+        <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+      </li>
+    {% endfor %}
+  {% endif %}
 </ul>
