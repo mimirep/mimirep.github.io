@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Category
-permalink: /Category/
+title: Categories
+permalink: /Categories/
 ---
 
 {% if site.posts.size == 0 %}
@@ -24,7 +24,7 @@ permalink: /Category/
     <h2 id="{{ tag[0] }}">
       {{ tag[0] }}
     </h2>
-    <ul class="tag">
+    <ul class="post">
       {% for post in tag[1] %}
         {% if post.title != null %}
           <li>
