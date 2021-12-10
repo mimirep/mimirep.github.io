@@ -22,12 +22,10 @@ avatar: https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/imogi.
 navigation:
   - name: Info
     url: /info
-  - name : Reviews
-    url: /Reviews
-  - name: Posts
-    url: /Posts
-  - name: Tags
-    url: /tags
+  - name: Category
+    url: /Category
+  - name: All Posts
+    url: /All_Posts
 
 # Pagination
 paginate: 5
