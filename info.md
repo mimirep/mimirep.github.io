@@ -12,8 +12,6 @@ permalink: /info/
 
 Majoring in archaeology<br>
 
-Dongguk University, Gyeongju<br>
-
 Seoul, Republic of Korea<br>
 
 Email : <wnrnrxla@gmail.com>, <wnrnrxla2@naver.com>
@@ -22,30 +20,25 @@ Email : <wnrnrxla@gmail.com>, <wnrnrxla2@naver.com>
 
 ## Education
 
-##### Daejin HighSchool, Seoul<br>
-
-Liberal Arts / 2013.3 ~ 2016.02<br>
-
 ##### Dongguk University, Gyeongju<br>
 
-Department of Archaeology & Art history / 2016.03 ~<br>
+Department of Archaeology & Art history / B.A. / 2016.03 ~ 2022.02<br>
 
-##### Seoul National University, Seoul (*Exchange student)<br>
+##### Hanyang University<br>
 
-Department of Archaeology & Art history / 2020.09 ~ 2021.06
+Department of Cultural Anthropology(Archaeology) / M.A. / 2022.03 ~
 
 ------
 
-## Area of interest in archaeology
+## Field of interest in archaeology
 
 Prehistoric ages<br>
 
-The hunter&gatherer society<br>
+Hunter & Gatherer society<br>
 
-Natural scientific analysis method<br>
-
-Programming of archaeological simulation models
-
+Scientific analysis
+- Isotope analysis
+- Radiocarbon Dating<br>
 ------
 
 ## Skill
