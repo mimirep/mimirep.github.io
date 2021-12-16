@@ -24,21 +24,19 @@ Email : <wnrnrxla@gmail.com>, <wnrnrxla2@naver.com>
 
 Department of Archaeology & Art history / B.A. / 2016.03 ~ 2022.02<br>
 
-##### Hanyang University<br>
+##### Soongsil University, Seoul<br>
 
-Department of Cultural Anthropology(Archaeology) / M.A. / 2022.03 ~
+Department of History(Archaeology) / M.A. / 2022.03 ~
 
 ------
 
 ## Field of interest in archaeology
 
-Prehistoric ages<br>
+Prehistoric Ages<br>
 
-Hunter & Gatherer society<br>
+Hunter & Gatherer Society<br>
 
-Scientific analysis
-- Isotope analysis
-- Radiocarbon Dating<br>
+Settlement Archaeology<br>
 
 ------
 
