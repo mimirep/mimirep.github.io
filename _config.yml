@@ -13,7 +13,7 @@ description: 작고 아름다운 미술지식
 #
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://github.com/mimirep/mimirep.github.io/blob/master/Logo.jpeg?raw=true #로고 이미지
+avatar: https://github.com/mimirep/mimirep.github.io/blob/master/images/Logo.jpeg?raw=true #로고 이미지
 
 
 # Tabs in header. There are 'Blog', 'About', 'Archive', 'Tags'
@@ -39,7 +39,7 @@ footer-links:
   flickr:
   github: mimirep
   googleplus: # anything in your profile username that comes after plus.google.com/
-  instagram: ch.ju97
+  instagram: mimi_art_letter
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
@@ -56,7 +56,7 @@ footer-text: © 2022. mimi. All rights reserved
 disqus: chantore-github-io # <username>.disqus.com
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-179253782-1
+#google_analytics: UA-179253782-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
