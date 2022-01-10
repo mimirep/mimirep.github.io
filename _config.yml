@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: ChanToRe
+name: MiMi
 
 # Short bio or description (displayed in the header)
-description: ChanHyeok Ju
+description: 작고 아름다운 미술지식
 
 #
 # Flags below are optional
@@ -24,8 +24,8 @@ navigation:
     url: /info
   - name: Categories
     url: /Categories
-  - name: All Posts
-    url: /All_Posts
+  - name: Archive
+    url: /Archive
 
 # Pagination
 paginate: 5
@@ -34,10 +34,10 @@ paginate: 5
 footer-links:
   behance: # https://www.behance.net/<username>
   dribbble:
-  email: wnrnrxla@gmail.com
+  email: mimi05.info@gmail.com
   facebook:
   flickr:
-  github: ChanToRe
+  github: mimirep
   googleplus: # anything in your profile username that comes after plus.google.com/
   instagram: ch.ju97
   linkedin:
@@ -49,7 +49,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
-footer-text: © 2020. ChanHyeokJu. All rights reserved
+footer-text: © 2022. mimi. All rights reserved
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -60,7 +60,7 @@ google_analytics: UA-179253782-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: "https://chantore.github.io/"
+url: "https://mimirep.github.io/"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
