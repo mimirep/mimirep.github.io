@@ -5,5 +5,5 @@
 layout: home
 ---
 
-<p align="center"> 	<img src="https://github.com/ChanToRe/ChanToRe.github.io/blob/master/images/intro.jpg?raw=true" alt="kingdom" width="40%" height="40%"/> </p>
+<p align="center"> 	Test </p>
 
