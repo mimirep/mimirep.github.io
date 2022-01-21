@@ -5,5 +5,4 @@
 layout: home
 ---
 
-<p align="center"> 	Test </p>
-
+<p align="center"> 	<img src="https://github.com/mimirep/mimirep.github.io/blob/master/images/main.jpeg?raw=true" width="40%" height="40%"/> </p>
