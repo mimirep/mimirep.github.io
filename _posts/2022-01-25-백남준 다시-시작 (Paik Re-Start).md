@@ -10,11 +10,11 @@ tags: [예술학]
 
 &nbsp;백남준은 1960년대 초반 독일 가정에 보급된 텔레비전 브라운관을 작품의 매체로 착안하여 음악과 비디오를 결합한 새로운 미디어 아트를 개척했습니다. 비디오 아트의 시작에는 그가 있었습니다. 그는 1964년 뉴욕으로 이주 후 2006년 사망할 때까지 활발히 작품 활동을 이어갔습니다.
 
-<center><figure><img src="https://user-images.githubusercontent.com/64909586/150681766-5d131621-f10f-4a8d-9d6a-9d2e4e532943.jpg" width=40% height=40%><figcaption><그림 1> 다다익선 1</figcaption></figure></center>
+<center><figure><img src="https://github.com/mimirep/mimirep.github.io/blob/master/images/202201/%E1%84%83%E1%85%A1%E1%84%83%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%A8%E1%84%89%E1%85%A5%E1%86%AB1.jpg?raw=true" width=40% height=40%><figcaption><그림 1> 다다익선 1</figcaption></figure></center>
 
 &nbsp;올해 2022년은 백남준이 탄생한지 90주년을 맞는 해입니다. 백남준 아트센터와 국립현대미술관 과천은 이를 기념하는 행사를 진행한다고 하는데요. 백남준 아트센터는 올해 1977년 백남준의 “나의 축제는 거칠 것이 없어라”라는 선언을 바탕으로 기존의 틀을 뛰어넘는 다채로운 전시와 프로그램을 선보일 예정입니다. 국립현대미술관은 오는 6월 《백남준 아카이브》전시와 11월 《백남준 효과》전시가 개최 예정입니다. 2018년 이후 가동을 중지해왔던 과천관 로비에 설치된 작품 <다다익선>(1989)을 3년 만에 재가동 준비예정입니다.
 
-<center><figure><img src="https://user-images.githubusercontent.com/64909586/150681789-a835f4b6-81a7-4d03-a15f-4c1ba564aa16.jpg" width=40% height=40%><figcaption><그림 2> 다다익선 2</figcaption></figure></center>
+<center><figure><img src="https://github.com/mimirep/mimirep.github.io/blob/master/images/202201/%E1%84%83%E1%85%A1%E1%84%83%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%A8%E1%84%89%E1%85%A5%E1%86%AB2.jpg?raw=true" width=40% height=40%><figcaption><그림 2> 다다익선 2</figcaption></figure></center>
 
 &nbsp;비디오 아트 장르의 시작을 알린 백남준과 올해 탄생 90주년인 그의 축제를 보는 모든 이에게 2022년이 우리의 축제처럼 다가오기를 희망합니다, 2018년부터 3년간 수리를 해왔던 <다다익선>이 오는 2022년에 재가동되는 것처럼, 코로나19 이후 멈춰있었던 우리의 삶도 2022년 새롭게 시작 할 수 있지 않을까요?
 
