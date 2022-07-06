@@ -5,4 +5,4 @@
 layout: home
 ---
 
-<p align="center"> 	<img src="https://user-images.githubusercontent.com/64909586/165004916-f0634b8b-758b-42e2-9b74-9e5f45c6a43c.jpeg?raw=true" width="100%" height="100%"/> </p>
+<p align="center"> 	<img src="https://user-images.githubusercontent.com/64909586/177552351-288d8989-d28e-48c1-8f1d-f3a601fa9322.jpeg?raw=true" width="100%" height="100%"/> </p>
